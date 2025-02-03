@@ -1,0 +1,72 @@
+/*CSS HEADER */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 90px;
+    background-color: #f0f0f0;
+}
+
+.logo {
+    height: 50px;
+}
+
+header p {
+    margin: 0 10px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.user-icon {
+    font-size: 30px;
+    color: #666;
+}
+
+
+/* ESTILOS DEL SECTION BIENVENIDA */
+
+.bienvenida {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0; 
+    background-color: var(--bienvenida-bg); 
+    background-image: url('../assets//foto-home-page.jpg');  
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(86, 7, 150, 0.8);  
+    background-blend-mode: overlay;
+    color: white;
+  }
+  
+  .bienvenida button {
+    padding: 18px 60px;  
+    margin-top: 30px;  
+    font-size: 16px;  
+    color: #fff;  
+    background-color: #4b0082;  
+    border: none;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    transition: background-color 0.3s ease;  
+  }
+
+  .bienvenida button:hover {  
+    background-color: #3a0066; 
+  }
+
+  .h1-bienvenida{
+    font-size: 50px;
+  }
+  
+  .p-bienvenida{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
