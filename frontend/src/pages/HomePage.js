@@ -1,8 +1,19 @@
 import React from 'react';
 import { FaUserCircle } from 'react-icons/fa';
+import { FaUsers } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { BiSolidTrafficCone } from "react-icons/bi";
+import { MdContactSupport } from "react-icons/md";
 import { Link } from 'react-router-dom';
 import '../stylesPages/HomePage.css';
 import logo from '../assets/logo-principal.png';
+import peskitos from  '../assets/peskitos.png';
+import accuñados from  '../assets/accuñados.png';
+import cantera from '../assets/cantera.png';
+import consuegra from '../assets/consuegra.png';
+import ff from '../assets/ff.png';
+import pacificopanzon from '../assets/pacificopanzon.png';
+import gigantes from '../assets/gigantes.png';
 
 function HomePage() {
   return (
@@ -20,7 +31,7 @@ function HomePage() {
 
       <section className='bienvenida'>
         <h1 className='h1-bienvenida'>¡Bienvenido a Sporta!</h1>
-        <p className='p-bienvenida'>únete a nostros y empieza a administar tu equipo</p>
+        <p className='p-bienvenida'>Únete a nostros y empieza a administar tu equipo</p>
         <button className='button-bienvenida'>Comienza a administrar</button>
       </section>
 
@@ -32,7 +43,43 @@ function HomePage() {
       </section>
 
       <section className='section-2'>
-        
+        <h2>¿Qué ofrecemos?</h2>
+        <div class="container">
+            <div class="service">
+            <FaUsers className='icon'/>
+            <h3>Jugadores y cuerpo técnico</h3>
+                <p>Gestiona tu equipo fácilmente: añade, edita o elimina jugadores, organiza partidos con detalles clave y planifica entrenamientos. ¡Enfócate en el juego!</p>
+            </div>
+            <div class="service">
+            <FaLocationDot className='icon'/>
+            <h3>Partidos oficiales y amistosos</h3>
+                <p>Organiza tus partidos fácilmente: define fecha, hora, lugar, rival y equipación. Asegura que todos estén listos para dar lo mejor en el campo.</p>
+            </div>
+            <div class="service">
+            <BiSolidTrafficCone className='icon'/>
+            <h3>Sesiones de entrenamiento</h3>
+                <p>Planifica tus entrenamientos fácilmente: establece la hora y define las actividades para mantener a tu equipo en forma y preparado.</p>
+            </div>
+            <div class="service">
+            <MdContactSupport  className='icon'/>
+            <h3>Atención 24/7</h3>
+                <p>En Sporta ofrecemos atención al cliente los 365 días del año con expertos tanto en perfil tecnológico como en perfil futbolístico.</p>
+            </div>
+        </div>
+      </section>
+      <section className='section-3'> 
+        <h2>SPORTA X CLUB</h2>
+        <div className='carrousel'>
+          <div className='wrap'>
+          <img src={peskitos} alt="Peskitos" className="img-peskitos" />
+          <img src={cantera} alt="Cantera" className="img-cantera" />
+          <img src={accuñados} alt="AC Cuñados" className="img-ac-cuñados" />
+          <img src={consuegra} alt="Consuegra" className="img-consuegra" />
+          <img src={pacificopanzon} alt="Pacifico Panzon" className="img-pacifico-panzon" />
+          <img src={ff} alt="FF" className="img-ff" />
+          <img src={gigantes} alt="Gigantes" className="img-gigantes" />
+          </div>
+        </div>
       </section>
       </main>
     </div>
