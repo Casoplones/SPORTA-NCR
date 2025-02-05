@@ -1,12 +1,11 @@
 import React from 'react';
-import { FaUserCircle } from 'react-icons/fa';
 import { FaUsers } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { BiSolidTrafficCone } from "react-icons/bi";
 import { MdContactSupport } from "react-icons/md";
-import { Link } from 'react-router-dom';
+import Header from '../components/Header';
 import '../stylesPages/HomePage.css';
-import logo from '../assets/logo-principal.png';
+import Footer from '../components/Footer';
 import peskitos from  '../assets/peskitos.png';
 import accuñados from  '../assets/accuñados.png';
 import cantera from '../assets/cantera.png';
@@ -18,15 +17,7 @@ import gigantes from '../assets/gigantes.png';
 function HomePage() {
   return (
     <div className="home-page">
-      <header>
-        <img src={logo} alt="Logo Principal" className="logo" />
-        <p>Acerca de Sporta</p>
-        <p>Funciones</p>
-        <p>Precio</p>
-        <Link to="/login">
-          <FaUserCircle size={30} />
-        </Link>
-      </header>
+      <Header />
       <main>
 
       <section className='bienvenida'>
@@ -82,6 +73,7 @@ function HomePage() {
         </div>
       </section>
       </main>
+      <Footer />
     </div>
   );
 }

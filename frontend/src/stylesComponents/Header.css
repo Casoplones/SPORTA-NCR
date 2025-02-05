@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 90px;
+}
+
+.logo {
+    height: 50px;
+}
+
+header p {
+    margin: 0px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
+.user-icon {
+    font-size: 30px;
+    color: #666;
+}

@@ -1,0 +1,29 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.rights{
+    font-size: 10px;
+    color: gray;
+    margin-top: 50px;
+}
